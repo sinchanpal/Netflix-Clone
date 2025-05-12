@@ -1,0 +1,488 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* background hero image section */
+.hero_section {
+    height: 88vh;
+    width: 100%;
+    background-image: url("/Netflix-hero-section-image.jpg");
+    background-size: cover;
+    position: relative;
+
+
+}
+
+.opacity_box {
+
+    height: 88vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.66;
+    position: absolute;
+    top: 0%;
+
+}
+
+/* hero section navbar  */
+.navbar {
+    /* background-color: aqua; */
+    height: 10%;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+
+.netflix_logo {
+    height: 50px;
+    width: 150px;
+    background-image: url("/Navbar_Netflix_logo.png");
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar_button {
+    position: relative;
+    z-index: 10;
+
+}
+
+.navbar_button .button1 {
+    height: 32px;
+    width: 124px;
+    border-radius: 5px;
+    background-color: rgb(30, 28, 28);
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.597);
+}
+
+.navbar_button .button2 {
+    height: 32px;
+    width: 76px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+/* hero section main text portion */
+.hero_text {
+
+    display: flex;
+    flex-direction: column;
+    height: 87%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+
+
+}
+
+
+.hero_text .first_text {
+    font-size: 50px;
+    font-weight: bolder;
+
+}
+
+.hero_text .second_text {
+    font-size: 18px;
+    font-weight: 550;
+
+}
+
+/* hero section bottom input and button */
+.hero_text .third_text input {
+    height: 54px;
+    width: 243px;
+    border-radius: 5px;
+    background-color: rgba(23, 22, 22, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.597);
+    margin-right: 3px;
+    color: white;
+
+}
+
+.hero_text .third_text input::placeholder {
+    color: rgb(152, 151, 151);
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+.hero_text .third_text button {
+    height: 59px;
+    width: 180px;
+    padding-bottom: 6px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+
+}
+
+
+/* separation line portion */
+.separation {
+    position: relative;
+    bottom: 28px;
+    height: 100px;
+    width: 100%;
+    border-top: 5px solid red;
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    background: radial-gradient(at top, rgba(4, 103, 209, 0.6) 10%, rgba(0, 0, 0, 0) 60%);
+    background-color: black;
+
+
+}
+
+
+/* main movie display section */
+main {
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/* .movies_section{
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    width: 100%;
+    background-color: aquamarine;
+    color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    padding-left: 40px;
+    padding-right: 40px;
+} */
+
+
+.movies_section {
+    position: relative;
+    /* Changed from absolute */
+    min-height: 45vh;
+    /* Allows flexibility */
+    padding: 0 50px;
+    /* Adjusted padding */
+    max-width: 100%;
+    box-sizing: border-box;
+    color: white;
+    /* background-color: aquamarine; */
+    padding-top: 20px;
+}
+
+
+/* .all_movie_box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap:50px;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 20px;
+    
+} */
+
+.all_movie_box {
+    gap: 35px;
+    /* Reduce gap */
+    flex-wrap: wrap;
+    /* Allows wrapping */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+
+.movie_box {
+    height: 246px;
+    width: 190px;
+    background-color: fuchsia;
+    border-radius: 0.7rem;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.2s ease-in;
+}
+
+.movie_box:hover {
+    transform: scale(1.1);
+}
+
+
+
+.inner_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    /* background-color:blueviolet; */
+    right: 29px;
+    bottom: 15px;
+    font-size: 90px;
+    font-weight: bolder;
+    color: black;
+    -webkit-text-stroke: 3px white;
+}
+
+/* first movie row */
+.firstboxRow.firstbox {
+    background-image: url("/puspa2.webp");
+    background-size: cover;
+}
+
+.firstboxRow.secondbox {
+    background-image: url("/daakuMaharaaj.webp");
+    background-size: cover;
+}
+
+.firstboxRow.thirdbox {
+    background-image: url("/squidgame.webp");
+    background-size: cover;
+}
+
+.firstboxRow.fourthbox {
+    background-image: url("/dhoomdhaam.webp");
+    background-size: cover;
+}
+
+.firstboxRow.fifthbox {
+    background-image: url("/luckybaskha.webp");
+    background-size: cover;
+}
+
+.firstboxRow.sixthbox {
+    background-image: url("/kadhalikka.webp");
+    background-size: cover;
+}
+
+
+
+/* second movie row */
+.secondboxRow.firstbox {
+    background-image: url("/bhoolbhulaiyaa3.webp");
+    background-size: cover;
+}
+
+.secondboxRow.secondbox {
+    background-image: url("/venom.webp");
+    background-size: cover;
+}
+
+.secondboxRow.thirdbox {
+    background-image: url("/mismatched.webp");
+    background-size: cover;
+}
+
+.secondboxRow.fourthbox {
+    background-image: url("/blackwarrant.webp");
+    background-size: cover;
+}
+
+/* .secondboxRow.fifthbox {
+    background-image: url("/luckybaskha.webp");
+    background-size: cover;
+} */
+
+/* .secondboxRow.sixthbox {
+    background-image: url("/kadhalikka.webp");
+    background-size: cover;
+} */
+
+
+
+/* why we join Netflix section */
+.whyNetflix{
+    color:white;
+    /* background-color: aqua; */
+    display:flex;
+    /* justify-content: space-between; */
+    gap:30px;
+    min-height: 30vh;
+    padding: 60px;
+    flex-wrap: wrap;
+   
+   
+}
+
+.descriptionBox{
+    position: relative;
+    top:50px;
+    height: 250px;
+    width:270px;
+   
+    background: radial-gradient(at bottom right, rgba(249, 100, 74, 0.6) 1%, rgba(25, 32, 68, 0) 70%);
+    border:2px solid black;
+    padding: 20px;
+    border-radius: 5%;
+    background-color: rgb(26, 33, 68);
+}
+
+.pic{
+    position:absolute;
+    bottom: 3px;
+    right:4px;
+    height:90px;
+    width:90px;
+    /* background-color: brown; */
+    background-image: url("/tvimage-removebg-preview.png");
+    background-size: cover;
+   
+   
+
+   
+}
+
+.descriptionBox p{
+    color:#9D9EAB;
+    font-weight: 650;
+}
+
+
+/* help Section */
+
+.helpSection{
+    position:relative;
+    color:white;
+    min-height: 90vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.helpbox{
+    height: 75px;
+    width:87%;
+    background-color: #414141;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    flex-wrap: wrap;
+}
+
+.helpbox .plus{
+    font-size: 60px;
+    font-weight:lighter;
+}
+
+
+
+/* ready to create section */
+.endSectionInput input{
+    height: 54px;
+    width: 500px;
+    border-radius: 5px;
+    background-color: rgba(23, 22, 22, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.597);
+    margin-right: 3px;
+    color: white;
+}
+
+.endSectionInput input::placeholder {
+    color: rgb(152, 151, 151);
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+.endSectionInput button{
+    height: 59px;
+    width: 180px;
+    padding-bottom: 6px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+
+
+/* footer section(FAQ) */
+.endFAQSection{
+    min-height: 70vh;
+    max-width: 100%;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content:center; */
+    padding: 0px 80px;
+    color: #7D7D7D;
+}
+
+.aboutUs{
+    height: 250px;
+    min-width: 87%;
+    background-color:black;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.aboutUs .aboutUsText{
+
+    height:150px;
+    width: 200px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.aboutUs .aboutUsText a{
+    color: #7D7D7D;
+    font-weight: 400;
+
+}
+
+
+.endFAQSection button {
+    height: 32px;
+    width: 124px;
+    border-radius: 5px;
+    background-color: rgb(30, 28, 28);
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.597);
+    margin-bottom: 30px;
+}
